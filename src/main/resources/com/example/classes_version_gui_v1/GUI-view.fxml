@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="414.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.classes_version_gui_v1.GUIController">
+   <center>
+      <TabPane prefHeight="274.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+        <tabs>
+          <Tab text="Queue 1">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="371.0" prefWidth="437.0">
+                     <children>
+                        <TableView fx:id="queueTableView1" layoutX="-1.0" layoutY="-3.0" prefHeight="332.0" prefWidth="600.0">
+                          <columns>
+                            <TableColumn fx:id="fName1" prefWidth="90.39999103546143" text="First Name" />
+                            <TableColumn fx:id="sName1" prefWidth="103.20001220703125" text="Second Name" />
+                              <TableColumn fx:id="vehicleNo1" prefWidth="101.60005187988281" text="Vehicle Number" />
+                              <TableColumn fx:id="noOfLiters1" prefWidth="106.39996337890625" text="Number of Liters" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Queue 2">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="371.0" prefWidth="437.0">
+                     <children>
+                        <TableView fx:id="queueTableView2" prefHeight="322.0" prefWidth="591.0">
+                           <columns>
+                              <TableColumn fx:id="fName2" prefWidth="90.39999103546143" text="First Name" />
+                              <TableColumn fx:id="sName2" prefWidth="103.20001220703125" text="Second Name" />
+                              <TableColumn fx:id="vehicleNo2" prefWidth="103.20001220703125" text="Vehicle Number" />
+                              <TableColumn fx:id="noOfLiters2" prefWidth="103.20001220703125" text="Number of Liters" />
+                           </columns>
+                        </TableView>
+                     </children></AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Queue 3">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="371.0" prefWidth="437.0">
+                     <children>
+                        <TableView fx:id="queueTableView3" prefHeight="332.0" prefWidth="600.0">
+                           <columns>
+                              <TableColumn fx:id="fName3" prefWidth="90.39999103546143" text="First Name" />
+                              <TableColumn fx:id="sName3" prefWidth="103.20001220703125" text="Second Name" />
+                              <TableColumn fx:id="vehicleNo3" prefWidth="101.60005187988281" text="Vehicle Number" />
+                              <TableColumn fx:id="noOfLiters3" prefWidth="106.39996337890625" text="Number of Liters" />
+                           </columns>
+                        </TableView>
+                     </children></AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Queue 4">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="371.0" prefWidth="437.0">
+                     <children>
+                        <TableView fx:id="queueTableView4" prefHeight="332.0" prefWidth="600.0">
+                           <columns>
+                              <TableColumn fx:id="fName4" prefWidth="90.39999103546143" text="First Name" />
+                              <TableColumn fx:id="sName4" prefWidth="103.20001220703125" text="Second Name" />
+                              <TableColumn fx:id="vehicleNo4" prefWidth="101.60005187988281" text="Vehicle Number" />
+                              <TableColumn fx:id="noOfLiters4" prefWidth="106.39996337890625" text="Number of Liters" />
+                           </columns>
+                        </TableView>
+                     </children></AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Queue 5">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="371.0" prefWidth="437.0">
+                     <children>
+                        <TableView fx:id="queueTableView5" prefHeight="332.0" prefWidth="600.0">
+                           <columns>
+                              <TableColumn fx:id="fName5" prefWidth="90.39999103546143" text="First Name" />
+                              <TableColumn fx:id="sName5" prefWidth="103.20001220703125" text="Second Name" />
+                              <TableColumn fx:id="vehicleNo5" prefWidth="101.60005187988281" text="Vehicle Number" />
+                              <TableColumn fx:id="noOfLiters5" prefWidth="106.39996337890625" text="Number of Liters" />
+                           </columns>
+                        </TableView>
+                     </children></AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Waiting List">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="371.0" prefWidth="437.0">
+                     <children>
+                        <TableView fx:id="queueTableViewWait" prefHeight="332.0" prefWidth="600.0">
+                           <columns>
+                              <TableColumn fx:id="fNameWait" prefWidth="90.39999103546143" text="First Name" />
+                              <TableColumn fx:id="sNameWait" prefWidth="103.20001220703125" text="Second Name" />
+                              <TableColumn fx:id="vehicleNoWait" prefWidth="101.60005187988281" text="Vehicle Number" />
+                              <TableColumn fx:id="noOfLitersWait" prefWidth="106.39996337890625" text="Number of Liters" />
+                           </columns>
+                        </TableView>
+                     </children></AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </center>
+   <top>
+      <AnchorPane prefHeight="42.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="filterField" layoutX="106.0" layoutY="8.0" prefHeight="26.0" prefWidth="250.0" />
+            <Label layoutX="38.0" layoutY="6.0" prefHeight="27.0" prefWidth="68.0" text="Search" textAlignment="CENTER" textFill="#ff1b1b">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>
